@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body class="body">
+    <audio src="audio/beep.mp3" type="audio/mpeg" autoplay="fals" id="beep"></audio>
+    <div id="space" class="space">
+        <main class="main">
+            <div id="contain" class="container">
+                <div class="numeric">
+                    <div class="numeric__pomodoro-set">
+                        <p class="numeric__text">Pomodoro</p>
+                        <input type="number" min="5" max="55" step="5" id="numeric__pomodoro-time" class="numeric__timeset" value="50">
+                    </div>
+                    <div class="numeric__break-set">
+                        <p class="numeric__text">Break</p>
+                        <input type="number" min="5" max="55" step="5" id="numeric__break-time" class="numeric__timeset" value="10">
+                    </div>
+                </div>
+                <div id="timer" class="timer">50:00</div>
+                <button id="start-btn" class="button">
+                    Start
+                    <script rel="js" src="js/main.js"></script>
+                </button>
+            </div>
+        
+        </main>
+    </div>
+</body>
+</html>

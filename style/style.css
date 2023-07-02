@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Caveat-Regular;
+    src: url(../font/Caveat-Regular.ttf);
+}
+@font-face {
+    font-family: Itim-Regular;
+    src: url(../font/Itim-Regular.ttf);
+}
+
+body {
+    background-color: #1C1825;
+    font-family: 'Itim-Regular','Caveat-Regular','Arial','sans-serif';
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+}
+.main {
+    width: 540px;
+    height: 500px;
+    margin: 150px auto;
+}
+.container::before {
+    content: 'Pomodoro Timer';
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: -80px;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #211A31;
+    box-shadow: 0 0 10px 5px #6b589f8c;
+    border-radius: 30%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.numeric {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 35px;
+    padding-bottom: 50px;
+}
+
+.numeric__timeset {
+    width: 85px;
+    height: 100%;
+    background-color: #8b80a87c;
+    border:none;
+    border-radius: 5px;
+    font-family: 'Itim-Regular','Arial','sans-serif';
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    outline: none;
+    appearance: textfield;
+}
+.numeric__timeset::-webkit-outer-spin-button,
+.numeric__timeset::-webkit-inner-spin-button {
+       -webkit-appearance: none;
+        margin: 0;
+}
+
+.numeric__timeset[type=number] {
+    -moz-appearance: textfield;
+}
+.numeric__timeset:hover,
+.numeric__timeset:focus{
+    box-shadow: 0 0 5px 5px #6b589f8c;
+}
+
+.timer {
+    font-family: 'Itim-Regular';
+    font-size: 110px;
+    font-weight: 700;
+}
+.button {
+    font-family: 'Itim-Regular';
+    font-size: 72px;
+    font-weight: 700;
+    text-align: center;
+    width: 300px;
+    height: 100px;
+    background-color: #8b80a87c;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 40px;
+    border: none;
+}
+
+.start:hover {
+    box-shadow: 0 0 5px 5px #6b589f8c;
+}
+
+
+body.pomodoro {
+    background-color: #964943;
+}
+.container.pomodoro {
+    background-color: #C85C53;
+    box-shadow: 0 0 10px 5px #CAA78D;
+}
+
+body.break {
+    background-color: #4087b6;
+}
+.container.break {
+    background-color: #679fc5;
+}
