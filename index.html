@@ -15,16 +15,24 @@
                 <div class="numeric">
                     <div class="numeric__pomodoro-set">
                         <p class="numeric__text">Pomodoro</p>
-                        <input type="number" min="5" max="55" step="5" id="numeric__pomodoro-time" class="numeric__timeset" value="50">
+                        <div class="numeric__pomodoro">
+                            <button id="pomodoro-minus" class="numeric__button">-</button>
+                            <input type="number" min="5" max="55" step="5" id="numeric__pomodoro-time" readonly class="numeric__timeset" value="50">
+                            <button id="pomodoro-plus" class="numeric__button"> + </button>
+                        </div>
                     </div>
                     <div class="numeric__break-set">
                         <p class="numeric__text">Break</p>
-                        <input type="number" min="5" max="55" step="5" id="numeric__break-time" class="numeric__timeset" value="10">
+                        <div class="numeric__break">
+                            <button id="break-minus" class="numeric__button">-</button>
+                            <input type="number" min="5" max="55" step="5" id="numeric__break-time" readonly class="numeric__timeset" value="10">
+                            <button id="break-plus" class="numeric__button">+</button>
+                        </div>
                     </div>
                 </div>
-                <div id="timer" class="timer">50:00</div>
+                <div id="timer" class="timer"></div>
                 <button id="start-btn" class="button">
-                    Start
+                    <p id="button-text">Start</p>
                     <script rel="js" src="js/main.js"></script>
                 </button>
             </div>

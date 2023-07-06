@@ -53,10 +53,23 @@ body {
     height: 35px;
     padding-bottom: 50px;
 }
-
+.numeric__button {
+    display: inline;
+    border: none;
+    font-family: 'Itim-Regular','Arial','sans-serif';
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 40px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    background-color: #7169887c;
+    color: #1C1825;
+    cursor: pointer;
+}
 .numeric__timeset {
+    display: inline;
     width: 85px;
-    height: 100%;
     background-color: #8b80a87c;
     border:none;
     border-radius: 5px;
@@ -66,6 +79,7 @@ body {
     text-align: center;
     outline: none;
     appearance: textfield;
+    margin: 0;
 }
 .numeric__timeset::-webkit-outer-spin-button,
 .numeric__timeset::-webkit-inner-spin-button {
